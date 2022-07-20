@@ -17,7 +17,7 @@ public class MainUI extends UI{
         Scanner in = new Scanner(System.in);
         String option = "";
         System.out.println("---------------------------------------------------" +
-                "\n" + "facebook" +
+                "\n" + "CarPark" +
                 "\n" +
                 "\n" + "\t\t\t\t" + "1 - Create Car" +
                 "\n" + "\t\t\t\t" + "2 - Fill Tank" +
