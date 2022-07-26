@@ -5,24 +5,24 @@ public class Car {
     private String brand;
     private String model;
     private CarType carType;
-    private int anFabricatie;
-    private int kilometraj;
-    private double volumRezervor;
-    private double nivelCombustibil;
-    private double consum;
+    private int productionYear;
+    private int mileage;
+    private double tankCapacity;
+    private double fuelLevel;
+    private double fuelConsumption;
 
     public Car (){
 
     }
 
-    public Car(String brand, String model, int anFabricatie, int kilometraj, double volumRezervor, double nivelCombustibil, double consum) {
+    public Car(String brand, String model, int productionYear, int mileage, double tankCapacity, double fuelLevel, double fuelConsumption) {
         this.brand = brand;
         this.model = model;
-        this.anFabricatie = anFabricatie;
-        this.kilometraj = kilometraj;
-        this.volumRezervor = volumRezervor;
-        this.nivelCombustibil = nivelCombustibil;
-        this.consum = consum;
+        this.productionYear = productionYear;
+        this.mileage = mileage;
+        this.tankCapacity = tankCapacity;
+        this.fuelLevel = fuelLevel;
+        this.fuelConsumption = fuelConsumption;
     }
 
     public Car(String brand, String model, CarType carType) {
@@ -60,44 +60,44 @@ public class Car {
         this.model = model;
     }
 
-    public int getAnFabricatie() {
-        return anFabricatie;
+    public int getProductionYear() {
+        return productionYear;
     }
 
-    public void setAnFabricatie(int anFabricatie) {
-        this.anFabricatie = anFabricatie;
+    public void setProductionYear(int productionYear) {
+        this.productionYear = productionYear;
     }
 
-    public int getKilometraj() {
-        return kilometraj;
+    public int getMileage() {
+        return mileage;
     }
 
-    public void setKilometraj(int kilometraj) {
-        this.kilometraj = kilometraj;
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
     }
 
-    public double getVolumRezervor() {
-        return volumRezervor;
+    public double getTankCapacity() {
+        return tankCapacity;
     }
 
-    public void setVolumRezervor(double volumRezervor) {
-        this.volumRezervor = volumRezervor;
+    public void setTankCapacity(double tankCapacity) {
+        this.tankCapacity = tankCapacity;
     }
 
-    public double getNivelCombustibil() {
-        return nivelCombustibil;
+    public double getFuelLevel() {
+        return fuelLevel;
     }
 
-    public void setNivelCombustibil(double nivelCombustibil) {
-        this.nivelCombustibil = nivelCombustibil;
+    public void setFuelLevel(double fuelLevel) {
+        this.fuelLevel = fuelLevel;
     }
 
-    public double getConsum() {
-        return consum;
+    public double getFuelConsumption() {
+        return fuelConsumption;
     }
 
-    public void setConsum(double consum) {
-        this.consum = consum;
+    public void setFuelConsumption(double fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
     }
 
     public CarType getCarType() {
