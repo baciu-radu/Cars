@@ -1,8 +1,8 @@
-package main.java.car.ui;
+package car.ui;
 
 import java.util.Scanner;
 
-public class MainUI extends UI{
+public class MainUI extends UI {
 
     public void showMainUI(){
         UI ui = new MainUI();

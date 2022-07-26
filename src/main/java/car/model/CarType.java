@@ -1,4 +1,4 @@
-package main.java.car.model;
+package car.model;
 
 public enum CarType {
     DIESEL("diesel"), GASOLINE("petrol"), ELECTRIC("electric");

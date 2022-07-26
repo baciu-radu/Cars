@@ -1,8 +1,8 @@
-package main.java.car;
+package car;
 
-import main.java.car.model.Car;
-import main.java.car.model.CarType;
-import main.java.car.ui.MainUI;
+import car.model.Car;
+import car.model.CarType;
+import car.ui.MainUI;
 
 public class Application {
     static MainUI mainUI = new MainUI();

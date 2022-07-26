@@ -1,4 +1,4 @@
-package main.java.car.ui;
+package car.ui;
 
 public class SellCarUI {
     public void showSellCarUI(){
