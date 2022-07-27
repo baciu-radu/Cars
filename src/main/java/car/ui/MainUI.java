@@ -1,5 +1,11 @@
 package car.ui;
 
+import car.model.Car;
+import car.service.CarPark;
+import com.sun.tools.javac.Main;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class MainUI extends UI {
@@ -14,6 +20,9 @@ public class MainUI extends UI {
         TestDriveUI testDriveUI = new TestDriveUI();
         SellCarUI sellCarUI = new SellCarUI();
 
+
+        CarPark carPark = new CarPark();
+
         Scanner in = new Scanner(System.in);
         String option = "";
         System.out.println("---------------------------------------------------" +
@@ -24,7 +33,7 @@ public class MainUI extends UI {
                 "\n" + "\t\t\t\t" + "3 - Check Fuel" +
                 "\n" + "\t\t\t\t" + "4 - Check KM" +
                 "\n" + "\t\t\t\t" + "5 - Check Year of Fabrication" +
-                "\n" + "\t\t\t\t" + "6 - Test Drive" +
+                "\n" + "\t\t\t\t" + "6 - Show cars" +
                 "\n" + "\t\t\t\t" + "7 - Sell Car" +
                 "\n" + "\t\t\t\t" + "x - Close" +
                 "\n" + "---------------------------------------------------"
@@ -35,7 +44,9 @@ public class MainUI extends UI {
 
             switch (option){
                 case "1":
-                        createCarUI.showCreateCarUI();
+                        Car car = createCarUI.createCarUI();
+                        carPark.addCarToPark(car);
+                        showMainUI();
                         break;
                 case "2":
                     fillTankUI.showFillTankUI();
@@ -50,7 +61,10 @@ public class MainUI extends UI {
                     checkYearUI.showCheckYearUI();
                     break;
                 case "6":
-                    testDriveUI.showTestDriveUI();
+                    System.out.println("---------------------");
+                    System.out.println("Here is your car park");
+                    carPark.showCars();
+                    System.out.println("---------------------");
                     break;
                 case "7":
                     sellCarUI.showSellCarUI();
@@ -64,7 +78,6 @@ public class MainUI extends UI {
         }
 
     }
-
 
     @Override
     public void closeApplication() {

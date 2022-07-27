@@ -15,6 +15,19 @@ public class Car {
 
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", productionYear=" + productionYear +
+                ", mileage=" + mileage +
+                ", tankCapacity=" + tankCapacity +
+                ", fuelLevel=" + fuelLevel +
+                ", fuelConsumption=" + fuelConsumption +
+                '}';
+    }
+
     public Car(String brand, String model, int productionYear, int mileage, double tankCapacity, double fuelLevel, double fuelConsumption) {
         this.brand = brand;
         this.model = model;
@@ -25,20 +38,7 @@ public class Car {
         this.fuelConsumption = fuelConsumption;
     }
 
-    public Car(String brand, String model, CarType carType) {
-        this.brand = brand;
-        this.model = model;
-        this.carType = carType;
-    }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", carType=" + carType +
-                '}';
-    }
 
     public void drive() {
         System.out.println("Driving car: " + this.toString());
